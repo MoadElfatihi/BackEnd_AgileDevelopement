@@ -1,6 +1,4 @@
 # BackEnd_AgileDevelopement
 
 This application is developped with a simulation of the agile methodology  .
-<p align="center">
-  <img src="C:\Users\hp\Desktop\application_architecture.PNG" width="1309" title="hover text">
-</p>
+![alt tag](https://user-images.githubusercontent.com/34817694/75092505-65c3f900-5578-11ea-8daf-389f3b4740fc.PNG)
