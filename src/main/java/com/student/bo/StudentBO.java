@@ -12,8 +12,9 @@ import com.user.bo.UserBO;
 @Entity
 @Table(name="student")
 public class StudentBO extends UserBO implements IStudentBO {
-	@Id
-	@Column(name="pk_seq")
+	//@Id
+	//@Column(name="pk_seq")
+	// if we don't provide the strategy hibernate will choose the best strategy
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private Long id;
 	
@@ -26,8 +27,8 @@ public class StudentBO extends UserBO implements IStudentBO {
 		super();
 	}
 
-	public StudentBO(String levelOfStudies) {
-		super();
+	public StudentBO(String firstName, String lastName, String email, Long age,String levelOfStudies) {
+		super(firstName,lastName,email,age);
 		this.levelOfStudies = levelOfStudies;
 	}
 
